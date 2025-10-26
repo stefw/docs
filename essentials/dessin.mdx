@@ -1,0 +1,271 @@
+---
+title: "New file"
+description: "Description of your new file."
+---
+
+````markdown
+# Dessins des Compositions et Alignements
+
+Ce document complète `group-style-system.md` avec des schémas ASCII pour visualiser rapidement les variantes de layout et les options d'alignement exposées dans le builder.  
+Chaque bloc montre la structure générale ; les lettres représentent l'ordre des médias.
+
+---
+
+## 1. `single`
+
+Layout disponible : `horizontal`
+
+```
+┌───────────────┐
+│      A        │
+└───────────────┘
+```
+
+Alignement (vertical) : Top / Middle / Bottom
+
+---
+
+## 2. `pair`
+
+### Horizontal
+```
+┌──────┬──────┐
+│  A   │  B   │
+└──────┴──────┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Vertical
+```
+┌────────┐
+│   A    │
+├────────┤
+│   B    │
+└────────┘
+Alignement horizontal : Left / Center / Right
+```
+
+### Carousel
+```
+[ A ] [ B ]
+```
+
+---
+
+## 3. `triptych`
+
+### Horizontal (proportions personnalisables)
+```
+┌────┬────────┬────┐
+│ A  │   B    │ C  │
+└────┴────────┴────┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Vertical
+```
+┌────────┐
+│   A    │
+├────────┤
+│   B    │
+├────────┤
+│   C    │
+└────────┘
+Alignement horizontal : Left / Center / Right
+```
+
+### Mosaïque (variante 2+1)
+
+```
+Variant left/right       Variant top/bottom
+┌────┬────────┐          ┌──────────────┐
+│A   │        │          │     A        │
+├────┤   C    │          ├────┬────┬───┤
+│B   │        │          │ B  │ C  │ D │
+└────┴────────┘          └────┴────┴───┘
+```
+
+### Carousel
+```
+[ A ] [ B ] [ C ]
+```
+
+---
+
+## 4. `quad`
+
+### Horizontal
+```
+┌──┬──┬──┬──┐
+│A │B │C │D │
+└──┴──┴──┴──┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Vertical
+```
+┌────┐
+│ A  │
+├────┤
+│ B  │
+├────┤
+│ C  │
+├────┤
+│ D  │
+└────┘
+Alignement horizontal : Left / Center / Right
+```
+
+### Grid (2×2)
+```
+┌────┬────┐
+│ A  │ B  │
+├────┼────┤
+│ C  │ D  │
+└────┴────┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Carousel
+```
+[ A ] [ B ] [ C ] [ D ]
+```
+
+---
+
+## 5. `quint`
+
+### Horizontal
+```
+┌─┬─┬─┬─┬─┐
+│A│B│C│D│E│
+└─┴─┴─┴─┴─┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Mosaïque (4 petites + 1 grande)
+
+```
+Variant left/right       Variant top/bottom
+┌────┬────────┐          ┌──────────────┐
+│A   │        │          │     A        │
+├────┤   E    │          ├────┬────┬───┤
+│B   │        │          │ B  │ C  │ D │
+├────┤        │          ├────┴────┬───┤
+│C   │        │          │    E    │   │
+├────┤        │          └────────┴───┘
+│D   │        │
+└────┴────────┘
+```
+
+### Carousel
+```
+[ A ] [ B ] [ C ] [ D ] [ E ]
+```
+
+---
+
+## 6. `six`
+
+### Horizontal
+```
+┌─┬─┬─┬─┬─┬─┐
+│A│B│C│D│E│F│
+└─┴─┴─┴─┴─┴─┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Grid (3×2)
+```
+┌────┬────┬────┐
+│ A  │ B  │ C  │
+├────┼────┼────┤
+│ D  │ E  │ F  │
+└────┴────┴────┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+---
+
+## 7. `sept`
+
+### Horizontal
+```
+┌─┬─┬─┬─┬─┬─┬─┐
+│A│B│C│D│E│F│G│
+└─┴─┴─┴─┴─┴─┴─┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Mosaïque (6 petites + 1 grande)
+
+```
+Variant left/right       Variant top/bottom
+┌────┬────────┐          ┌──────────────┐
+│A   │        │          │     A        │
+├────┼────────┤          ├────┬────┬───┤
+│B   │        │          │ B  │ C  │ D │
+├────┼   G    │          ├────┼────┼───┤
+│C   │        │          │ E  │ F  │   │
+├────┼────────┤          ├────┴────┴───┤
+│D   │        │          │     G        │
+├────┼────────┤          └──────────────┘
+│E   │        │
+├────┼────────┤
+│F   │        │
+└────┴────────┘
+```
+
+---
+
+## 8. `oct`
+
+### Horizontal
+```
+┌─┬─┬─┬─┬─┬─┬─┬─┐
+│A│B│C│D│E│F│G│H│
+└─┴─┴─┴─┴─┴─┴─┴─┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Grid (4×2)
+```
+┌────┬────┬────┬────┐
+│ A  │ B  │ C  │ D  │
+├────┼────┼────┼────┤
+│ E  │ F  │ G  │ H  │
+└────┴────┴────┴────┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Carousel
+```
+[ A ] [ B ] [ C ] [ D ] [ E ] [ F ] [ G ] [ H ]
+```
+
+---
+
+## 9. `nine`
+
+### Horizontal (bandeau panoramique)
+```
+┌─┬─┬─┬─┬─┬─┬─┬─┬─┐
+│A│B│C│D│E│F│G│H│I│
+└─┴─┴─┴─┴─┴─┴─┴─┴─┘
+Alignement vertical : Top / Middle / Bottom
+```
+
+### Carousel
+```
+[ A ] [ B ] [ C ] [ D ] [ E ] [ F ] [ G ] [ H ] [ I ]
+```
+
+---
+
+### Légende Alignement
+
+- **Top / Middle / Bottom** : alignement vertical lorsque le conteneur principal est en `flex-row` ou `grid`.
+- **Left / Center / Right** : alignement horizontal lorsque le conteneur principal est en `flex-col`.
+- Les mosaïques utilisent un mix grid/flex, mais héritent des mêmes conventions (le bloc principal reste centré ; les sous-grilles garantissent le contact bord à bord avec l'image principale).
+
+````
